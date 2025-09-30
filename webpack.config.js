@@ -29,8 +29,15 @@ module.exports = {
       library: { type: "module" },
       remotes: {
         otp: "otp@http://localhost:4201/remoteEntry.js",
+        onboarding: "onboarding@http://localhost:4202/remoteEntry.js",
       },
       shared: share({
+        "stencil-library": {
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: "^0.1.47",
+          eager: true,
+        },
         "@angular/core": {
           singleton: true,
           strictVersion: true,

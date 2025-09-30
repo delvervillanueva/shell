@@ -21,4 +21,14 @@ export const routes: Routes = [
         exposedModule: './Module',
       }).then((m) => m.OtpEntryModule),
   },
+  {
+    path: 'onboarding',
+    loadChildren: () =>
+      loadRemoteModule({
+        // type: 'module',
+        // remoteEntry: 'http://localhost:4202/remoteEntry.js',
+        remoteName: 'onboarding',
+        exposedModule: './Module',
+      }).then((m) => m.OnboardingEntryModule),
+  },
 ];
