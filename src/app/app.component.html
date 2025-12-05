@@ -8,3 +8,9 @@
 </header>
 
 <router-outlet />
+
+<!-- Modal global de inactividad -->
+<app-inactivity-modal 
+  *ngIf="showInactivityModal"
+  (closeModal)="onCloseInactivityModal()">
+</app-inactivity-modal>
