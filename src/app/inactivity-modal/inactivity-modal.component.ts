@@ -1,13 +1,12 @@
 import { Component, OnDestroy, OnInit, Output, EventEmitter, CUSTOM_ELEMENTS_SCHEMA, Input, inject } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { Subject } from 'rxjs';
-import { PrefixAssetPipe } from '@ng-darwin-wmf/microfront';
 
 
 @Component({
   selector: 'app-inactivity-modal',
   standalone: true,
-  imports: [CommonModule, PrefixAssetPipe],
+  imports: [CommonModule],
   templateUrl: './inactivity-modal.component.html',
   styleUrl: './inactivity-modal.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

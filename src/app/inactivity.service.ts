@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 import { Subject, fromEvent, merge } from 'rxjs';
 import { debounceTime, takeUntil } from 'rxjs/operators';
-import { InactivityModalComponent } from '../../inactivity-modal/inactivity-modal.component';
+import { InactivityModalComponent } from './inactivity-modal/inactivity-modal.component';
 
 
 /**
